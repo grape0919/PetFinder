@@ -18,8 +18,8 @@
             android:value="API_KEY"/>
 
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppTheme">
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,6 +29,9 @@
         <activity
             android:name="ml.ainlpstudy.dev.petfinder.DeviceListActivity"
             android:theme="@android:style/Theme.DeviceDefault.Dialog">
+        </activity>
+        <activity android:name="ml.ainlpstudy.dev.petfinder.MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
     </application>
 
