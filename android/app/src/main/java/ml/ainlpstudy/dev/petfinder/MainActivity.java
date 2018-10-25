@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //btService = new BluetoothHelper(this);
+        btService = new BluetoothHelper(this);
 
         MapView mapview;
         mapview = new MapView(this);

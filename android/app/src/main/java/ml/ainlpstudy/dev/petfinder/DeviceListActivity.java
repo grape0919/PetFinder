@@ -139,12 +139,15 @@ public class DeviceListActivity extends Activity {
             String address = info.substring(info.length() - 17);
             System.out.println("Extracted ADDR : " + address);
             // create the result intent and include mac
-            Intent intent = new Intent();
-            intent.putExtra(EXTRA_DEVICE_ADDRESS, address);
+            if(address!=null) {
+                Intent intent = new Intent();
+                intent.putExtra(EXTRA_DEVICE_ADDRESS, address);
 
-            // set result and finish activity
-            setResult(Activity.RESULT_OK, intent);
-            finish();
+              // set result and finish activity
+                setResult(Activity.RESULT_OK, intent);
+
+                finish();
+            }
         }
     };
 
